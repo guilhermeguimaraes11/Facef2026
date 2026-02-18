@@ -1,0 +1,14 @@
+ATIVIDADE 1
+X/Twitter
+Back-end
+Sistema de autenticação: Valida login, senha e token.
+Processamento de hashtags e tendências: Analisa milhões de posts para identificar os assuntos mais comentados.
+Algoritmo da timeline: Decide quais posts aparecem primeiro com base em relevância, engajamento e perfis seguidos.
+
+Front-end:
+Botão de repostar (retweet)
+Campo para escrever post (tweet)
+Trending Topics (assuntos do momento)
+
+ATIVIDADE 2 
+Todas as mudanças que eu fiz desapareceu e o site voltou ao normal, as mudanças sumiram porque o navegador recarregou os arquivos originais do servidor, provando que o "Inspecionar" é apenas uma ferramenta de visualização temporária e local.
