@@ -1,26 +1,36 @@
-body{
-    background-color: #f0f2f5;
+body {
+    /* cor de fundo */
+    background-color: #5a95ee;
+    /* definir flexbox com layout da página*/
     display: flex;
+    /* centralizar na horizontal */
     justify-content: center;
+    /* centralizar na vertical */
     align-items: center;
+    /* define altura da pagina */
     height: 100vh;
+
     font-family: Arial, sans-serif;
 }
 
-.card{
+/*o ponto referencia o class */
+.card {
     background-color: white;
+    /*espaçamento interno*/ 
     padding: 20px;
+    /* cantos arredondados*/
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
-    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-button{
+button {
     background-color: black;
+    /*cor do texto*/ 
     color: white;
-    border: none;
+    border-radius:10px;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-   
+
 }
