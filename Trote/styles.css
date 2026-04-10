@@ -1,99 +1,76 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+    margin: 0; font-family: 'Segoe UI', sans-serif;
+    background-color: #F4F7F6; color: #333;
 }
-
-.menu {
-    background-color: #1e3c72;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+.menu-principal {
+    background-color: #1E3C72; padding: 15px 0;
+    position: sticky; top: 0; z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
-
 .menu-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 1000px; margin: 0 auto; display: flex;
+    justify-content: space-between; align-items: center;
     padding: 0 20px;
 }
-
-.menu-logo {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+.logo{
+    color: white; text-decoration: none; font-weight: bold;
+    font-size: 1.2rem;  text-transform: uppercase;
 }
-
 .lista {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+    list-style: none; display: flex; gap: 20px;
+    margin: 0; padding: 0;
 }
-
 .lista a {
-    color: #CBDCF7;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.3s;
+    color: #cbdcf7; text-decoration: none; font-size: 0.9rem; 
+    font-weight: 500; transition: color 0.3s;
 }
-
 .lista a:hover {
-    color: #ffffff;
+    color: #fff;
 }
-
 .cabecalho {
-    background-color: #2e4c82;
+   
+    background-color: #3E5C92;
     color: white;
     padding: 60px 20px;
     text-align: center;
 }
-
-.cabecalho h1 {
+.cabecalho-container {
+    
+}
+.cabecalho-container h1 {
     font-size: 2.5rem;
     margin-bottom: 5px;
-}
-
-.cabecalho h2 {
+} 
+.cabecalho-container h2 {
     font-weight: 300;
     font-style: italic;
     color: #ffd700;
 }
-
 .principal {
+    
     max-width: 900px;
     margin: -40px auto 40px;
     padding: 20px;
 }
-
 section {
     background: white;
     margin-bottom: 20px;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.3)
 }
-
 .importante {
-    display: flex;
+
+    display: flex; /* por padrão, adota-se a horizontal (row)*/
     gap: 20px;
 }
-
-.card-meta {
+.caixa-importante {
     flex: 1;
     background: #eef5ff;
     padding: 15px;
     border-left: 5px solid #2a5298;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .recompensas ul {
@@ -110,448 +87,149 @@ section {
     font-weight: bold;
 }
 
-.texto-introducao p {
-    line-height: 1.6;
+.missao p {
+    line-height: 1.6; /* altura da linha - melhora a leitura de textos longos */
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: justify; /* alinhamento à esquerda e à direita */
 }
 
-.lista-valores {
+.valores ul {
     list-style: none;
-    padding: 0;
-}
-
-.lista-valores li {
-    background: #eef5ff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border-left: 5px solid #1e3c72;
+    padding: 0px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%; 
+    border-collapse: collapse; /* junto as bordas adjacentes, ficando uma só */
     margin-top: 20px;
     background-color: white;
 }
-
-th,
-td {
-    padding: 15px;
-    text-align: left;
+th, td {
+    padding: 15px; text-align: left;
     border-bottom: 1px solid #ddd;
 }
-
 th {
     background-color: #2a5298;
-}
-
-.box-amarela {
-    width: 25px;
-    height: 25px;
-    border-radius: 4px;
-    background: yellow;
-}
-
-/* pags provas e metas */
-.provas-header {
-    text-align: center;
-    padding: 30px 0 10px;
-}
-
-.provas-header h2 {
-    color: #1e3c72;
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-}
-
-.provas-header p {
-    color: #666;
-    font-size: 1rem;
-}
-
-.prova-card {
-    background: white;
-    margin-bottom: 24px;
-    padding: 28px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #2a5298;
-}
-
-.prova-card.destaque-amarelo {
-    border-left: 5px solid #f0c000;
-    background: #fffdf0;
-}
-
-.prova-card.destaque-vermelho {
-    border-left: 5px solid #e74c3c;
-    background: #fff8f8;
-}
-
-.prova-card h3 {
-    margin: 0 0 10px;
-    color: #1e3c72;
-    font-size: 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.prova-card>p {
-    color: #555;
-    margin-bottom: 16px;
-    line-height: 1.6;
-}
-
-.kit-box {
-    background: #fffde7;
-    border: 2px dashed #f0c000;
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin-top: 12px;
-}
-
-.kit-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.kit-box ul li {
-    padding: 6px 0;
-    color: #444;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.kit-box ul li::before {
-    content: "✅";
-    font-size: 0.9rem;
-}
-
-.subtitulo-avulsos {
-    margin: 20px 0 8px;
-    color: #1e3c72;
-}
-
-.descricao-avulsos {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 0;
-}
-
-.tabela-avulsos {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 12px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.tabela-avulsos th {
-    background-color: #2a5298;
     color: white;
-    padding: 12px 16px;
-    text-align: left;
-    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.tabela-avulsos td {
-    padding: 12px 16px;
-    border-bottom: 1px solid #eee;
-    color: #444;
-}
-
-.tabela-avulsos tr:last-child td {
-    border-bottom: none;
-}
-
-.tabela-avulsos tr:hover td {
-    background-color: #f0f5ff;
-}
-
-.requisitos {
-    list-style: none;
-    padding: 0;
-    margin: 12px 0 0;
-}
-
-.requisitos li {
-    padding: 6px 0;
-    line-height: 1.5;
-    color: #444;
-    display: flex;
-    gap: 8px;
-    align-items: flex-start;
-}
-
-.req-ok::before {
-    content: "✅";
-    flex-shrink: 0;
-}
-
-.req-aviso::before {
-    content: "⚠️";
-    flex-shrink: 0;
-}
-
-.req-info::before {
-    content: "📋";
-    flex-shrink: 0;
-}
-
-.req-premio::before {
-    content: "🏅";
-    flex-shrink: 0;
-}
-
-.req-aviso {
-    color: #c0392b;
-}
-
-.req-ok {
-    color: #27ae60;
-}
-
-.req-info {
-    color: #2a5298;
-}
-
-.nota-pontos {
-    margin-top: 12px;
-    color: #555;
-}
-
-.rodape {
-    background: #1e3c72;
-    color: #cdd8f0;
-    text-align: center;
-    padding: 24px 20px;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    line-height: 1.8;
-}
-
-.rodape a {
-    color: #ffd700;
-    text-decoration: none;
-}
-
-/* pag  cronograma*/
-.etapas-container {
-    display: flex;
-    gap: 0;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.etapa-card {
-    flex: 1;
-    padding: 25px;
-}
-
-.etapa-azul {
-    background: #eef5ff;
-    border-left: 5px solid #2a5298;
-}
-
-.etapa-cinza {
-    background: #f5f5f5;
-    border-left: 3px solid #ccc;
-}
-
-.etapa-card h4 {
-    margin: 0 0 10px;
-    color: #1e3c72;
-    font-size: 1rem;
-}
-
-.etapa-card p {
-    margin: 0;
-    color: #555;
-    line-height: 1.5;
-    font-size: 0.95rem;
-}
-
-.tabela-etapas {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 16px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.tabela-etapas th {
-    background-color: #2a5298;
-    color: white;
-    padding: 12px 16px;
-    text-align: left;
     font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+}
+.amarelo {
+    width: 25px; height: 25px; background: yellow;
+}
+.cinza {
+    width: 25px; height: 25px; background: gray;
 }
 
-.tabela-etapas td {
-    padding: 10px 16px;
-    border-bottom: 1px solid #eee;
-    color: #444;
-    font-size: 0.95rem;
+.kit-container {
+    background-color: #fff8e1;
+    border: 2px dashed #ffc107;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
 }
 
-.tabela-etapas tr:last-child td {
-    border-bottom: none;
-}
-
-.tabela-etapas tr:hover td {
-    background-color: #f0f5ff;
-}
-
-.secao-medalhas {
-    background: #fffdf0;
-    border-left: 5px solid #f0c000;
-}
-
-.lista-medalhas {
+.lista-itens {
     list-style: none;
     padding: 0;
-    margin: 12px 0 0;
 }
 
-.lista-medalhas li {
-    background: #f5f5f5;
-    border-left: 4px solid #2a5298;
-    padding: 12px 16px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    color: #333;
-    font-size: 0.95rem;
+.lista-itens li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #856404;
 }
 
-
-.lista-criterios {
-    list-style: none;
-    padding: 0;
-    margin: 8px 0 0;
+.suplementos {
+    border-left: 5px solid #ff4b2b;
+    background-color: #fff5f5;
 }
 
-.lista-criterios li {
-    color: #c8960c;
-    font-weight: 500;
-    padding: 4px 0;
-    font-size: 0.95rem;
+/* Destaque para as Provas de Menção Honrosa */
+.memorias-facef, .acao-social, .album-figurinhas {
+    border-left: 5px solid #ffd700; /* Cor dourada para medalhas */
+    background-color: #fffdf0;
 }
 
-/* pag  formato*/
+footer{
+    background-color: #1e3c72; /* Azul escuro oficial do Uni-FACEF  */
+    color: white; /* Texto em branco para contraste */
+     text-align: center; /* Centraliza as informações de contato */
+      padding: 30px 20px; /* Espaçamento interno para não sufocar o texto */
+      margin-top: 50px; /* Afasta o rodapé do conteúdo principal (main) */
+      font-size: 0.85rem; /* Fonte levemente menor para hierarquia visual */
+       border-top: 4px solid #ffd700; /* Linha dourada discreta no topo do footer */
+}
 
-.etapas-container {
+footer p {
+
+     margin: 8px 0; /* Espaçamento entre as linhas de texto */
+      opacity: 0.9; /* Deixa o texto suavemente menos brilhante que o menu */
+}
+
+.timeline {
+    border-left: 3px solid #2a5298;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.evento {
+    margin-bottom: 25px;
+    position: relative; /* dá o poder de flutuar na página, sem alterar posição outros elementos*/
+}
+/* cria um pseudoelemento no CSS - serve para inserir conteúdo decorativo ou informativo logo no início de um elemento sem que altere HTML  - elemento fantasma */
+.evento::before { 
+    content: ''; /* sem texto */
+    width: 12px; /* largura da bolinha */
+    height: 12px; /* altura da bolinha */
+    background: #ff4b2b; /* fundo da bolinha */
+    border-radius: 50%; /* cria a bolinha */
+    position: absolute; /* cria a bolinha na posição atual */
+    left: -28px; /* vai para a esquerda */
+    top: 5px; /* abaixa 5px */ 
+}
+
+.grid-locais {
     display: flex;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
-.etapa-card {
-    flex: 1;
-    padding: 20px 24px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-.etapa-card h4 {
-    margin: 0 0 10px;
-    font-size: 1rem;
-    color: #1e3c72;
-}
-
-.etapa-card p {
-    margin: 0;
-    color: #555;
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-.etapa-azul {
-    background: #dce8fb;
-    border-left: 5px solid #2a5298;
-}
-
-.etapa-clara {
-    background: #eef3fb;
-    border-left: 5px solid #7aa3d4;
-}
-
-.tabela-etapas {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 12px;
+.local {
+    flex: 1; /* ocupe toda a área */
+    background: #f8f9fa;
+    padding :15px;
     border-radius: 8px;
-    overflow: hidden;
+    border: 1px solid #dee2e6;
 }
 
-.tabela-etapas th {
-    background-color: #2a5298;
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+button {
+    background-color: #27ae60;
     color: white;
-    padding: 12px 16px;
-    text-align: left;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.tabela-etapas td {
-    padding: 11px 16px;
-    border-bottom: 1px solid #eee;
-    color: #2a5298;
-    font-size: 0.95rem;
-}
-
-.tabela-etapas tr:last-child td {
-    border-bottom: none;
-}
-
-.tabela-etapas tr:hover td {
-    background-color: #f0f5ff;
-}
-
-.secao-medalhas {
-    background: #fffdf0;
-    border-left: 5px solid #f0c000;
-}
-
-.lista-medalhas {
-    list-style: none;
-    padding: 0;
-    margin: 12px 0 0;
-}
-
-.lista-medalhas li {
-    background: #f4f4f4;
-    padding: 14px 18px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border-left: 4px solid #2a5298;
-    color: #333;
-    font-size: 0.95rem;
-}
-
-/* pag integracao */
-
-.lista-criterios {
-    list-style: none;
-    padding: 0;
-    margin: 8px 0 0;
-}
-
-.lista-criterios li {
-    color: #c8900a;
-    font-weight: 500;
-    padding: 4px 0;
-    font-size: 0.95rem;
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-left: 5px solid #1e3c72;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
