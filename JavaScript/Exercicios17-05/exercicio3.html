@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Pedra, Papel e Tesoura</title>
+    <script src="exercicio3.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <h3>Pedra, Papel e Tesoura</h3>
+            <div class="form-group">
+                <label>Jogador 1 (pedra, papel ou tesoura):</label>
+                <input type="text" id="jogador1" placeholder="EX: pedra">
+            </div>
+            <div class="form-group">
+                <label>Jogador 2 (pedra, papel ou tesoura):</label>
+                <input type="text" id="jogador2" placeholder="EX: papel">
+            </div>
+            <button onclick="verificarVencedor()">Verificar vencedor</button>
+            <div id="resultadoJogo" class="resultado-box">
+                Resultado...
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
