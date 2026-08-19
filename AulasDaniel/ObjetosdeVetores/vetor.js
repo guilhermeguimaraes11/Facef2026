@@ -23,9 +23,16 @@ let media = soma / vetor.length
 console.log("A média de ano dos filmes é " + media.toFixed(2))
 
 let busca = "A Odisseia"
+let achou = false // Ainda não encontrei
 for(let i=0;i<vetor.length;i++){
-    if(vetor[i].filme === "A Odisseia"){
+    if(busca === vetor[i].filme){ // Encontrei
+        console.log(vetor[i])
+        achou = true
+        break // Para de procurar
     }
     
+}
+if(!achou){ // não encontrou
+    console.log("Filme não encontrado")
 }
 
